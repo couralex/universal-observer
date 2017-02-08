@@ -1,9 +1,9 @@
-# universal-observe
-[![Build Status](https://travis-ci.org/couralex/universal-observe.svg?branch=master)](https://travis-ci.org/couralex/universal-observe)
-[![Coverage Status](https://coveralls.io/repos/github/couralex/universal-observe/badge.svg?branch=master)](https://coveralls.io/github/couralex/universal-observe?branch=master)
+# universal-observer
+[![Build Status](https://travis-ci.org/couralex/universal-observer.svg?branch=master)](https://travis-ci.org/couralex/universal-observer)
+[![Coverage Status](https://coveralls.io/repos/github/couralex/universal-observer/badge.svg?branch=master)](https://coveralls.io/github/couralex/universal-observer?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-universal-observe observes changes in objects, arrays, maps, sets, dates, etc.  
+universal-observer observes changes in objects, arrays, maps, sets, dates, etc.  
 The implementation is based on es6 proxies, so it must be used in an environnement supporting them.
 
 ## Features
@@ -17,13 +17,13 @@ The implementation is based on es6 proxies, so it must be used in an environneme
 ## Installation
 
 ```
-npm install universal-observe
+npm install universal-observer
 ```
 
 ## Example
 
 ```js
-import {observe} from 'universal-observe';
+import {observe} from 'universal-observer';
 
 const obj = {a: 1, b: [1, 2]};
 const observed = observe(obj, change => console.log(change));
@@ -36,7 +36,7 @@ observed.c = 3; // console: {object: obj, type: 'add', name: 'c', oldValue: unde
 ## API
 
 ```js
-import {observe, unobserve, pause, resume} from 'universal-observe';
+import {observe, unobserve, pause, resume} from 'universal-observer';
 
 observe(object, callback, options); // calls <callback> when a change is observed on <object>
 unobserve(object); // removes the observation trap
