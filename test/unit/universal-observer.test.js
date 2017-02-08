@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import {observe, unobserve, pause, resume} from '../../src/universal-observe';
+import {observe, unobserve, pause, resume} from '../../src/universal-observer';
 
 function expectObserve(target, mutation, expected, options) {
   let report = null;
@@ -15,7 +15,7 @@ function expectBulkObserve(target, mutation, expected, options) {
   expect(report).to.deep.equal(expected);
 }
 
-describe('UniversalObserve', function() {
+describe('UniversalObserver', function() {
   describe('observe', function () {
     describe('options: default', function() {
       it ('should throw on non-object targets', function () {
