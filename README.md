@@ -75,7 +75,7 @@ This is useful for mutator functions like sort, reverse, ... which triggers mult
 DeliveryMode may be:
 - singleUpdate: each individual change triggers the callback
 - bulk: groups the changes in an array. The array is passed instead of a single change object, even if there is only one change.
-- singleOperation: multiple changes are merged into one change object. The `type` property is the name of the mutator (sort, reverse, ...). This options is faster than the bulk option.
+- singleOperation: multiple changes are merged into one change object. The `type` property is the name of the mutator (sort, reverse, ...). This option is faster than the bulk option.
 
 Example :
 ```js
