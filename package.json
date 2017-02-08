@@ -2,7 +2,7 @@
   "name": "universal-observer",
   "version": "1.0.0",
   "description": "Observe deep changes in any object, array, map, set, date, ...",
-  "main": "./lib/universal-observe.js",
+  "main": "./lib/universal-observer.js",
   "scripts": {
     "clean": "rimraf lib",
     "transpile": "babel --source-maps inline src --out-dir lib",
