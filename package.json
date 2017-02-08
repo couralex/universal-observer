@@ -1,6 +1,6 @@
 {
   "name": "universal-observer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Observe deep changes in any object, array, map, set, date, ...",
   "main": "./lib/universal-observe.js",
   "scripts": {
